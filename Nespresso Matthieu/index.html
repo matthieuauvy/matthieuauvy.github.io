@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nespresso</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/949df75f70.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <header>
+        <img src="./logo.png" alt="nespresso" class="logo" id="top_page">
+    </header>
+
+    <section>
+        <div class="block top">
+            <h1> <strong>Already a Nespresso Customer ?</strong> </h1>
+            <h2> Select "Yes" for the question "Have you ever bought Nespresso coffee ?"</h2>
+            <h2>Indicate your client number & postal code</h2>
+            <h2>Then you can continuously benefit from the rewards program.</h2>
+        </div>
+
+        <div class="block main">
+            <p class="pmain bold">Have you placed an online order before?</p>
+            <p class="pmain">Then you already have an online account and you can log-in here.</p>
+            <p class="pmain">If not, you can activate your online account below and place your first online order.</p>
+
+            <form action="#" method="post" class="personnal_details">
+                <div class="personnal_details">
+                    <p class="pform">
+                        <label for="first_name" class="required">First Name :</label>
+                        <input type="text" name="first_name" id="first_name" class="input_details" autofocus placeholder="First Name :">
+                    </p>
+
+                    <span class="error">All fields with a "*" are mandatory.</span>
+
+                    <p class="pform">
+                        <label for="last_name" class="required">Last Name :</label>
+                        <input type="text" name="last_name" id="last_name" class="input_details" placeholder="Last Name :">
+                    </p>
+
+                    <span class="error">All fields with a "*" are mandatory.</span>
+
+                    <p class="pform">
+                        <label for="email" class="required">Email Address :</label>
+                        <input type="text" name="email" id="email" class="input_details" placeholder="Email Address :">
+                    </p>
+
+                    <span class="error">All fields with a "*" are mandatory.</span>
+
+                    <p class="pform">
+                        <label for="pwd" class="required">Password</label>
+                        <input type="password" name="pwd" id="pwd" class="input_details" placeholder="Password">
+                    </p>
+
+                    <span class="error">All fields with a "*" are mandatory.</span>
+
+                </div> 
+
+                <h1 class="greyblock">Nespresso Club membership</h1>
+                <div class="radio_membership">
+                    
+                    <input type="radio" name="membership" id="membership" value="NO">     No,    I do not have a Nespresso Club Membership number
+                    <br>
+                    <input type="radio" name="membership" id="expand-toggle" value="YES" checked >    Yes,    I do have a Nespresso Club Membership `number
+                    
+                    <div class="expandable"> 
+
+                        <p class="pform">
+                            <label for="member_number" class="required">Membership Number: </label>
+                            <input type="text" name="member_number" id="member_number" class="input_membership" placeholder="Membership Number :">
+                            <p class="wheretofind">where can you find your membership number ?</p>
+                        </p>
+                        
+
+                        <span class="error">All fields with a "*" are mandatory.</span>
+
+                        <p class="pform">
+                            <label for="postcode" class="required">My Postcode: </label>
+                            <input type="text" name="postcode" id="postcode" class="input_membership" placeholder="Postcode :">
+                        </p>
+
+                        <span class="error">All fields with a "*" are mandatory.</span>
+
+                    </div>
+            
+                </div>
+                <div class="submit">
+
+                    <p class="privacy_notice">By clicking on “Continue”, you acknowledge having read Nespresso Privacy Notice.</p> 
+
+                    <!-- <input type="submit" value="Continue" class="submit_button"> -->
+                    <button type="submit" value="Continue" class="submit_button"><div class="invisible">d</div> Continue<i class="fa-solid fa-chevron-right arrow"></i></button>
+
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_top">
+            
+            <div class="language">
+                <select name="country" id="country">
+                    <option value="ENG">English</option>
+                    <option value="FR">French</option>
+                </select>
+            </div>
+            <div class="bottom_links">
+                <ul>CONTACT</ul>
+                <ul>STORE LOCATOR</ul>
+                <ul>EVENTS</ul>
+                <ul>CAREERS</ul>
+                <ul>PRESS ROOM</ul>
+                <ul>ENTREPRISE DURABLE</ul>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="socials">
+                <p>Follow Nespresso on</p>
+                <div class="social_logos">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-twitter-square"></i>
+                </div>
+            </div>
+            <p><a href="#top_page">Top of the page </a><i class="fa-solid fa-circle-arrow-up"></i></p>
+            <div class="bottom_logo"><img src="./logo.png" alt="" class="bottom_logo"></div>
+        </div>
+
+
+    </footer>
+
+    <script src="errorSubmit.js"></script>
+</body>
+</html>
+
+
+<!-- class "required" and "red in CSS"
+    
+    span tag "error displays" -->

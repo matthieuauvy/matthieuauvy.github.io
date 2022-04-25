@@ -1,0 +1,194 @@
+@font-face
+{
+    font-family: 'Ballpark';
+    src: url(./fonts/ballpark.ttf);
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('./fonts/dayrom.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body
+{
+    background: url('images/fond_jaune.png');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+
+main
+{
+    width: 80%;
+    margin: auto;
+}
+
+header h1
+{
+    font-family: Ballpark, serif;
+    font-size: 4em;
+}
+
+header h2, section h1, footer h1, nav
+{
+    font-family: Dayrom, serif;
+    text-transform: uppercase;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+#logo, header h1
+{
+    display: inline-block;
+}
+
+nav
+{
+    display: inline-block;
+    /* width: 500px; */
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+nav li
+{
+    display: inline-block;
+}
+
+nav a
+
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover
+{
+    color: crimson;
+} 
+
+img#logo
+{
+    max-width: 100px;
+}
+
+img#corgi
+{
+    width: 150px;
+}
+
+#banner_image
+{
+    background: url(./images/sunriseSeoul.jpg) no-repeat; 
+    background-size : 100% 100%;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+#banner_description
+{
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding-left: 10px;
+    position:relative;
+    top: 88%;
+    left: 0%;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.red_button
+{
+    padding-right: 10px;
+    background-color: red;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding-left: 7px;
+    padding-right: 5px;
+    
+}
+
+section
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside
+{
+    width: 30%;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    box-shadow: -3px 3px rgb(109, 109, 109);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#arrow
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+footer
+{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h1
+{
+    font-size: 120%;
+}
+
+.picture_container
+{
+    display: flex;
+    width: 370px;
+    justify-content: space-between;
+}
+
+#my_friends ul
+{
+    display: inline-block;
+    max-width: 101px;
+}
+
+table
+{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td, th 
+{
+    border: 1px solid black;
+}
+
+thead, tfoot
+{
+    background-color: blueviolet;
+}
